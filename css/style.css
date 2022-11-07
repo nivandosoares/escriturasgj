@@ -5,15 +5,16 @@
 */
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap');
 
 /* Basic */
 
 	body, input, select, textarea {
 		color: white;
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: 'Urbanist', sans-serif;
 		font-size: 15pt;
 		font-weight: 300 !important;
-		letter-spacing: -0.025em;
+		letter-spacing: 0.075em;
 		line-height: 1.75em;
 	}
 
