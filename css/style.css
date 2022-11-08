@@ -12,14 +12,16 @@
 	body, input, select, textarea {
 		color: white;
 		font-family: 'Urbanist', sans-serif;
-		font-size: 15pt;
+		font-size: 20pt;
 		font-weight: 300 !important;
 		letter-spacing: 0.075em;
 		line-height: 1.75em;
 	}
-
+	img{
+		max-height: 256px;
+	}
 	body {
-		background: white;
+		background: black;
 		overflow: hidden;
 	}
 
@@ -107,7 +109,7 @@
 		transform: translate3d(0,0,0);
 		/* Set your background with this */
 		background: black url("images/bg.jpg") bottom left;
-		background-repeat: repeat-x;
+		background-repeat: none;
 		height: 100%;
 		left: 0;
 		opacity: 1;
@@ -121,7 +123,7 @@
 	@keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-2250px,0,0); -webkit-transform: translate3d(-2250px,0,0); -o-transform: translate3d(-2250px,0,0); -ms-transform: translate3d(-2250px,0,0); transform: translate3d(-2250px,0,0); } }
 
 	#bg {
-		background-size: 2250px auto;
+		background-size: 3459px auto;
 		width: 6750px;
 	}
 
