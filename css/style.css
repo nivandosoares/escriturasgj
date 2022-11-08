@@ -8,32 +8,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap');
 
 /* Basic */
-
-@media only screen and (max-width: 320px) { /* Media query for mobile responsive screen */
-	
-		#bg {
-			-moz-animation: bg 60s linear infinite;
-			-webkit-animation: bg 60s linear infinite;
-			-o-animation: bg 60s linear infinite;
-			-ms-animation: bg 60s linear infinite;
-			animation: bg 60s linear infinite;
-			-moz-backface-visibility: hidden;
-			-webkit-backface-visibility: hidden;
-			-o-backface-visibility: hidden;
-			-ms-backface-visibility: hidden;
-			backface-visibility: hidden;
-			/* Set your background with this */
-			background: black url("images/bgmobile.jpg") bottom top;
-			background-repeat: none;
-			height: 100%;
-			left: 0;
-			opacity: 1;
-			position: fixed;
-			top: 0;
-		}
-        
-
-}
+@media (max-width: 640px) {
+	#bg {
+	  background: url('images/bgmobile.jpg');
+	}
+  }
 
 	body, input, select, textarea {
 		color: white;
@@ -147,11 +126,6 @@
 	@-o-keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-2250px,0,0); -webkit-transform: translate3d(-2250px,0,0); -o-transform: translate3d(-2250px,0,0); -ms-transform: translate3d(-2250px,0,0); transform: translate3d(-2250px,0,0); } }
 	@-ms-keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-2250px,0,0); -webkit-transform: translate3d(-2250px,0,0); -o-transform: translate3d(-2250px,0,0); -ms-transform: translate3d(-2250px,0,0); transform: translate3d(-2250px,0,0); } }
 	@keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-2250px,0,0); -webkit-transform: translate3d(-2250px,0,0); -o-transform: translate3d(-2250px,0,0); -ms-transform: translate3d(-2250px,0,0); transform: translate3d(-2250px,0,0); } }
-
-	#bg {
-		background-size: 3459px auto;
-		width: 6750px;
-	}
 
 /* Overlay */
 	@-moz-keyframes overlay { 0% { opacity: 0; } 100% { opacity: 1; } }
