@@ -10,25 +10,34 @@
     <!--META TAGS-->
     <!-- Primary Meta Tags -->
 
-<title>Escrituras GJ</title>
-<meta name="title" content="Escrituras GJ">
-<meta name="description" content="Empresa especializada em documentação imobiliária em IRECÊ-BA e região Alvarás, Escrituração, Desmembramento de lotes, Documentações de Loteamento e Descaracterização de área">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://escriturasgj.vercel.app/">
-<meta property="og:title" content="Escrituras GJ">
-<meta property="og:description" content="Empresa especializada em documentação imobiliária em IRECÊ-BA e região Alvarás, Escrituração, Desmembramento de lotes, Documentações de Loteamento e Descaracterização de área">
-<meta property="og:image" content="/og_preview.jpg">
+    <title>Escrituras GJ</title>
+    <meta name="title" content="Escrituras GJ" />
+    <meta
+      name="description"
+      content="Empresa especializada em documentação imobiliária em IRECÊ-BA e região Alvarás, Escrituração, Desmembramento de lotes, Documentações de Loteamento e Descaracterização de área"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://escriturasgj.vercel.app/" />
+    <meta property="og:title" content="Escrituras GJ" />
+    <meta
+      property="og:description"
+      content="Empresa especializada em documentação imobiliária em IRECÊ-BA e região Alvarás, Escrituração, Desmembramento de lotes, Documentações de Loteamento e Descaracterização de área"
+    />
+    <meta property="og:image" content ="/og_preview.jpg" />
 
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://escriturasgj.vercel.app/">
-<meta property="twitter:title" content="Escrituras GJ">
-<meta property="twitter:description" content="Empresa especializada em documentação imobiliária em IRECÊ-BA e região Alvarás, Escrituração, Desmembramento de lotes, Documentações de Loteamento e Descaracterização de área">
-<meta property="twitter:image" content="/og_preview.jpg">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://escriturasgj.vercel.app/" />
+    <meta property="twitter:title" content="Escrituras GJ" />
+    <meta
+      property="twitter:description"
+      content="Empresa especializada em documentação imobiliária em IRECÊ-BA e região Alvarás, Escrituração, Desmembramento de lotes, Documentações de Loteamento e Descaracterização de área"
+    />
+    <meta property="twitter:image" content="https://escriturasgj.vercel.app/og_preview.jpg" />
 
-<meta name="viewport" content="" />
+    <meta name="viewport" content="" />
 
     <!--FAVICON INIT-->
 
@@ -111,6 +120,25 @@
     <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
     <script src="js/skel.min.js"></script>
     <script src="js/init.js"></script>
+    <script>
+
+    function modalHandler() {
+      var x = document.getElementById("more_info");
+      var icon = document.querySelector('.icon');
+
+        if (x.style.display === "none" && icon.classList.contains('fa-user')) {
+          icon.classList.remove('fa-user');
+          icon.classList.add('fa-xmark');   
+          x.style.display = "block";
+          } else {
+      icon.classList.remove('fa-xmark');
+      icon.classList.add('fa-user');      
+      x.style.display = "none";
+    }
+    
+  }
+
+    </script>
     <noscript>
       <link rel="stylesheet" href="css/skel.css" />
       <link rel="stylesheet" href="css/style.css" />
@@ -168,11 +196,18 @@
                 >
               </li>
               <li>
-                <a href="#" class="icon fa-solid fa-user" target="_blank"
+                <a
+                  href="#"
+                  class="icon fa-solid fa-user"
+                  onclick="modalHandler()"
                   ><span class="label">About-us</span></a
                 >
               </li>
             </ul>
+            <div id="more_info">
+              <h2>Sobre nós<h2>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
           </nav>
         </header>
 
